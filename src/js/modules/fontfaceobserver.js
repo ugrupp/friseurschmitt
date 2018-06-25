@@ -32,6 +32,13 @@ const fontsCi = transformFontData([
         ],
       },
       {
+        weight: 700,
+        styles: [
+          'normal',
+          'italic',
+        ],
+      },
+      {
         weight: 900,
         styles: [
           'normal',

@@ -5,13 +5,15 @@
 // Headlines
 .c-headline {
   @include font-smoothing;
-  font-weight: $font-weight-black;
+  @include font-black;
   word-wrap: break-word;
   display: block;
   hyphens: auto;
   text-transform: uppercase;
 }
 
-.c-headline--default {
-  @include typi('headline--default');
+.c-headline--h1 {
+  @include typi('headline--h1');
+  padding-bottom: .5em;
+  border-bottom: (5 / 24 * 1em) solid $color-white;
 }

@@ -11,7 +11,7 @@
 }
 
 .c-nav__item {
-  font-weight: $font-weight-black;
+  @include font-black;
   @include font-smoothing;
   text-transform: uppercase;
   @include typi(nav);

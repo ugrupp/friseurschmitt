@@ -24,8 +24,11 @@ $z-index: column-main, column-header;
 // Sizes
 $container-gutter: 25px;
 $container-gutter-sm: 50px;
-$container-width-default: 460px;
+$container-width-default: 450px;
 
 $content-spacing-vertical: 50px;
 $content-spacing-vertical-sm: 100px;
-$head-spacing-vertical-sm: 72px; // corresponds to $content-spacing-vertical-sm
+$head-spacing-vertical-sm: 74px; // corresponds to $content-spacing-vertical-sm
+
+$content-spacing: 40px;
+$content-spacing-inner: 25px;

@@ -64,8 +64,10 @@
 .l-head__nav {
   padding-top: rem(20px);
   padding-bottom: rem(20px);
+  display: none;
 
   @include mappy-bp($bp-layout-horizontal) {
+    display: block;
     padding-left: rem(173px); // totally magic number, based on logo signet width
   }
 }

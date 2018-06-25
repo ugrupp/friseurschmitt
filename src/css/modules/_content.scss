@@ -1,0 +1,12 @@
+//
+// Content (helper classes, mostly solving spacing and compositing)
+// --------------------------------------------------
+
+.c-content {
+  padding-bottom: rem($content-spacing);
+  border-bottom: rem(5px) solid $color-white;
+}
+
+.c-content__h1 {
+  margin-bottom: rem($content-spacing);
+}

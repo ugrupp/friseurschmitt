@@ -25,8 +25,10 @@
 @import 'base/layout';
 
 // Modules
-@import 'modules/typography';
+@import 'modules/headlines';
 @import 'modules/icon';
+@import 'modules/richtext';
 @import 'modules/logo';
 @import 'modules/nav';
 @import 'modules/model';
+@import 'modules/content';

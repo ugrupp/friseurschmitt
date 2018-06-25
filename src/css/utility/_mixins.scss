@@ -11,3 +11,12 @@
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
 }
+
+@mixin font-black {
+  font-weight: $font-weight-black;
+  font-family: $font-family-ci-black-fallback;
+
+  .has-loaded-fonts-ci & {
+    font-family: $font-family-ci;
+  }
+}

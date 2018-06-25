@@ -1,0 +1,57 @@
+//
+// Richtext
+// --------------------------------------------------
+
+.c-richtext {
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    &:not(:first-child) {
+      margin-top: rem($content-spacing-inner);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem($content-spacing-inner);
+    }
+  }
+
+  strong {
+    font-weight: $font-weight-bold;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  p,
+  table {
+    &:not(:last-child) {
+      margin-bottom: rem($content-spacing-inner);
+    }
+
+    &:not(:first-child) {
+      margin-top: rem($content-spacing-inner);
+    }
+  }
+
+  a {
+    color: $color-gold;
+    transition: color $transition-time;
+
+    &:hover,
+    &:focus {
+      color: $color-gold-light;
+    }
+  }
+
+  h2,
+  h3 {
+    font-weight: $font-weight-bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+}
