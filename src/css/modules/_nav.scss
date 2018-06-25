@@ -1,0 +1,21 @@
+//
+// Navigation
+// --------------------------------------------------
+
+.c-nav__item {
+  font-weight: $font-weight-black;
+  @include font-smoothing;
+  text-transform: uppercase;
+  @include typi(nav);
+}
+
+.c-nav__link {
+  color: inherit;
+  transition: color $transition-time;
+
+  .c-nav__item--active &,
+  &:hover,
+  &:focus {
+    color: $color-black;
+  }
+}
