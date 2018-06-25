@@ -1,7 +1,24 @@
 extends ../layouts/layout.pug
 
 block content
-  h1= times
-  - var pets = ['cat', 'dog']
-  each petName in pets
-    p petName
+  h1.c-headline.c-headline--h1 Öffnungszeiten
+
+  //- Richtext content
+  .c-richtext
+    img(src="/images/layout/foto_oeffnung.jpg", alt="Salon Schmitt")
+
+    h2 Wir sind (fast) immer für Sie da
+
+    p |
+      strong Dienstag bis Freitag
+      | 08:00 – 18:30 Uhr oder nach Vereinbarung<br/>
+      strong Samstag
+      | 08:00 – 14:00 Uhr
+
+    p Montag ist unser wohlverdienter Ruhetag.
+
+    hr
+
+    p |
+      strong Terminvereinbarung gerne unter
+      | 06055 / 2354

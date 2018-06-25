@@ -1,10 +1,13 @@
 extends ../layouts/layout.pug
 
 block content
-  <h2>Herzlich Willkommen</h2>
-  <div class="contentFoto" id="fotoWillkommen"></div>
-  <h3>Alles für Ihr Haar</h3>
-  Wir sind ein Team erfahrener Friseure unter Leitung von Friseurmeister Peter Schmitt.<br /><br />
-  Wir möchten Ihnen auf diesem Weg die Möglichkeit geben uns kennenzulernen. Informieren Sie sich über unser Team, unsere Geschäfts-Philosophie sowie unsere professionelle Haarpflegeserie.<br /><br />
-  Gerne würden wir auch Sie demnächst typgerecht und ganzheitlich beraten oder für einen besonderen Anlass stylen.
-  <div class="lineSpace"></div>
+  h1.c-headline.c-headline--h1 Herzlich Willkommen
+
+  //- Richtext content
+  .c-richtext
+    img(src="/images/layout/foto_willkommen.jpg", alt="Peter Schmitt")
+
+    h2 Alles für Ihr Haar
+    p Wir sind ein Team erfahrener Friseure unter Leitung von Friseurmeister Peter Schmitt.
+    p Wir möchten Ihnen auf diesem Weg die Möglichkeit geben uns kennenzulernen. Informieren Sie sich über unser Team, unsere Geschäfts-Philosophie sowie unsere professionelle Haarpflegeserie.
+    p Gerne würden wir auch Sie demnächst typgerecht und ganzheitlich beraten oder für einen besonderen Anlass stylen.

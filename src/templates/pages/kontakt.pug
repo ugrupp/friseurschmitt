@@ -1,7 +1,37 @@
 extends ../layouts/layout.pug
 
 block content
-  h1= kontakt
-  - var pets = ['cat', 'dog']
-  each petName in pets
-    p petName
+  h1.c-headline.c-headline--h1 Kontakt
+
+  //- Richtext content
+  .c-richtext
+    h2 So erreichen Sie uns
+
+    address
+      strong Friseursalon Peter Schmitt<br /><br />
+      | Barbarossastraße 33<br />
+      | 63579 Freigericht-Somborn<br /><br />
+
+      strong Fon
+      | 06055 / 2354<br />
+      strong Fax
+      | 06055 / 9121482<br />
+      strong Mail
+      a(href="mailto:info@friseurschmitt.de") info@friseurschmitt.de
+
+    hr
+
+    h3 Anfahrt
+    p
+      | ... aus Richtung Langenselbold:<br />
+      | Nach dem ersten Kreisel am Ortseingang, geradeaus bis zum 2. Kreisel. Da nehmen Sie die 1. Ausfahrt in die Hanauer Straße, nach ca. 200m finden Sie uns auf der linken Seite.
+
+    p
+      | ... aus Richtung Gelnhausen:<br />
+      | Am Ortseingang geradeaus bis zum Kreisel. Da nehmen Sie die 1. Ausfahrt in die Hanauer Straße, nach ca. 200m finden Sie uns auf der linken Seite.
+
+    p
+      | ... aus Richtung Schöllkrippen:<br />
+      | Am Ortseingang folgen Sie dem Strassenverlauf der Theodor-Heuss-Str., dann weiter geradeaus bis zum Kreisel. Da nehmen Sie die 1. Ausfahrt in die Hanauer Straße, nach ca. 200m finden Sie uns auf der linken Seite.
+
+    a(href="#") &raquo; Standort auf google.maps ansehen
