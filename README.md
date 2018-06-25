@@ -76,7 +76,7 @@ Ausgeführte Tasks:
 
 Wir nutzen hier einen SVG Workflow, der alle SVGs in einen externen SVG-Sprite zusammenführt. Dabei werden die SVGs zudem noch optimiert. Es ist zu beachten, dass die SVGs keine wichtigen Anweisungen in `<defs>`-Tags beinhalten dürfen, da diese bei der eingesetzten SVG-Sprite-Methode nicht berücksichtigt werden.
 
-## Authorshttp://hanfweihnacht.de/
+## Authors
 
 * Urs Grupp, https://www.21sieben.de
 * hanfweihnacht GbR, http://hanfweihnacht.de/
