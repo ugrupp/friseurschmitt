@@ -2,7 +2,10 @@
 //- default layout
 //- --------------------------------------------------
 
-//- global includes
+//- Variables
+block variables
+
+//- Global includes
 include ../includes/_mixins
 
 //- The Output
@@ -67,10 +70,11 @@ html
               img.c-model__img(src="/images/layout/model-01.jpg", alt="Model")
 
       //- Content column
-      main.l-content
-        .l-content__inner
-          .c-content
-            block content
+      if !hideContent
+        main.l-content
+          .l-content__inner
+            .c-content
+              block content
 
     //- scripts etc.
     script(src='/js/main.min.js')
