@@ -1,0 +1,65 @@
+//-
+//- default layout
+//- --------------------------------------------------
+
+//- global includes
+include ../includes/_mixins
+
+//- The Output
+doctype html
+html
+  head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Friseur Schmitt
+  meta(name='description', content='Haarschnitt, Haareschneiden, Haircut, professionelle Haarpflege, Dienstleistung, Freigericht-Somborn, Stylingberatung, Typberatung, Gelnhausen, Rodenbach, Langenselbold, Main-Kinzig Kreis, Friseur, Friseursalon, Strähnen, schneiden, glätten, Fönen, Dauerwelle, Beauty, Wellness')
+
+  link(href='https://fonts.googleapis.com/css?family=Poppins:400,400i,900', rel='stylesheet')
+  link(href='/css/main.min.css', rel='stylesheet')
+
+  //- body tag
+  body
+    .l-layout
+      //- Head column
+      header.l-layout__head
+        //- Logo
+        a.c-logo(href='/index.html')
+          .u-invisible Friseursalon Schmitt
+
+        //- Nav
+        nav.c-nav
+          ul.c-nav__list
+            li.c-nav__item
+              a.c-nav__link(href='/willkommen.html')
+                span Willkommen
+            li.c-nav__item
+              a.c-nav__link(href='/uns.html')
+                span Über uns
+            li.c-nav__item
+              a.c-nav__link(href='/oeffnungszeiten.html')
+                span Öffnungszeiten
+            li.c-nav__item
+              a.c-nav__link(href='/produkte.html')
+                span Produkte
+            li.c-nav__item
+              a.c-nav__link(href='/partner.html')
+                span Partner
+            li.c-nav__item
+              a.c-nav__link(href='/kontakt.html')
+                span Kontakt
+            li.c-nav__item
+              a.c-nav__link(href='/impressum.html')
+                span Impressum
+
+          //- Model
+          .c-model
+            //- Model ...
+
+      //- Content column
+      main.l-layout__content
+        block content
+
+    //- scripts etc.
+    script(src='/js/main.min.js')
+

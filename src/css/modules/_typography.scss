@@ -1,0 +1,17 @@
+//
+// Typography components
+// --------------------------------------------------
+
+// Headlines
+.c-headline {
+  @include font-smoothing;
+  font-weight: $font-weight-black;
+  word-wrap: break-word;
+  display: block;
+  hyphens: auto;
+  text-transform: uppercase;
+}
+
+.c-headline--default {
+  @include typi('headline--default');
+}

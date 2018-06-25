@@ -1,0 +1,32 @@
+//
+// Typography settings
+// --------------------------------------------------
+
+// Font Weights
+$font-weight-regular: 400;
+$font-weight-black: 900;
+
+// Font Families
+$font-family-ci-fallback: 'Arial', sans-serif;
+$font-family-ci: 'Poppins', sans-serif;
+
+// Tell Typi to use mappy-breakpoints
+$typi-breakpoint: mappy-bp;
+
+// Font Sizing
+/* stylelint-disable value-list-max-empty-lines */
+$typi: (
+  // Base for <html>, will be inherited
+  base: (
+    null: (16px, 1.25)
+  ),
+
+  content: (
+    null: (12px),
+  ),
+
+  headline--default: (
+    null: (14px, 1.25),
+  ),
+);
+/* stylelint-enable */

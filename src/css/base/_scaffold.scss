@@ -1,0 +1,35 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+// sets base font-sizing on html element
+@include typi-init;
+
+html {
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $color-white;
+  color: $color-gray-9;
+
+  // fallback font for initial render to avoid FOIT
+  font-family: $font-family-ci-fallback;
+
+  // fonts-loaded flag, triggered by JS (fontfaceobserver)
+  &.has-loaded-fonts-ci {
+    font-family: $font-family-ci;
+  }
+}
+
+::selection {
+  background: $color-gold;
+  color: $color-gray-9;
+}

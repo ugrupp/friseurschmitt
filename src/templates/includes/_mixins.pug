@@ -1,0 +1,4 @@
+//- svg icon mixin to be used with external svg sprite
+mixin svg(name)
+  svg.c-icon
+    use(xlink:href=`/images/svg/sprite.svg#${name}`)

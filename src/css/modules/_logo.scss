@@ -1,0 +1,13 @@
+//
+// Logo
+// --------------------------------------------------
+
+.c-logo {
+  display: block;
+
+  &,
+  &:hover,
+  &:focus {
+    color: inherit;
+  }
+}
