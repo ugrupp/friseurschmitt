@@ -4,10 +4,48 @@
 
 .c-logo {
   display: block;
+  width: 100%;
+  max-width: rem(250px);
+
+  @include mappy-bp($bp-layout-horizontal) {
+    max-width: rem(362px);
+  }
 
   &,
   &:hover,
   &:focus {
     color: inherit;
+  }
+}
+
+.c-logo__logo {
+  display: block;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.c-logo__logo--mobile {
+  padding-bottom: 48.65 / 189.56 * 100%; // taken from the SVG
+
+  @include mappy-bp($bp-layout-horizontal) {
+    display: none;
+  }
+}
+
+.c-logo__logo--desktop {
+  display: none;
+
+  @include mappy-bp($bp-layout-horizontal) {
+    display: block;
+    padding-bottom: 75.48 / 163.38 * 100%; // taken from the SVG
   }
 }

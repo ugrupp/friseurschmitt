@@ -11,6 +11,8 @@ $breakpoints: (
   'xl': 1400px
 );
 
+$bp-layout-horizontal: 'md';
+
 // Transition timing
 $transition-time: .2s;
 $transition-time-medium: .5s;
@@ -26,4 +28,4 @@ $container-width-default: 460px;
 
 $content-spacing-vertical: 50px;
 $content-spacing-vertical-sm: 100px;
-
+$head-spacing-vertical-sm: 72px; // corresponds to $content-spacing-vertical-sm

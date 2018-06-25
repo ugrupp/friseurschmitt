@@ -8,6 +8,11 @@
 html {
   box-sizing: border-box;
   text-size-adjust: 100%;
+
+  // holy grail
+  @include mappy-bp($bp-layout-horizontal) {
+    height: 100%;
+  }
 }
 
 *,
@@ -26,6 +31,13 @@ body {
   // fonts-loaded flag, triggered by JS (fontfaceobserver)
   &.has-loaded-fonts-ci {
     font-family: $font-family-ci;
+  }
+
+  // holy grail
+  @include mappy-bp($bp-layout-horizontal) {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 

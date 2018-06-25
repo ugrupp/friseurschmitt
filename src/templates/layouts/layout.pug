@@ -20,46 +20,55 @@ html
 
   //- body tag
   body
-    .l-layout
+    .l-wrapper
       //- Head column
-      header.l-layout__head
-        .l-layout__head-inner
-          //- Logo
-          a.c-logo(href='/index.html')
-            .u-invisible Friseursalon Schmitt
+      header.l-head
+        .l-head__inner
+          .l-head__top
+            //- Logo
+            a.c-logo(href='/index.html')
+              span.c-logo__logo.c-logo__logo--mobile
+                +svg('logo-friseurschmitt-mobil')
+              span.c-logo__logo.c-logo__logo--desktop
+                +svg('logo-friseurschmitt-desktop')
+              .u-invisible Friseursalon Schmitt
 
-          //- Nav
-          nav.c-nav
-            ul.c-nav__list
-              li.c-nav__item
-                a.c-nav__link(href='/willkommen.html')
-                  span Willkommen
-              li.c-nav__item
-                a.c-nav__link(href='/uns.html')
-                  span Über uns
-              li.c-nav__item
-                a.c-nav__link(href='/oeffnungszeiten.html')
-                  span Öffnungszeiten
-              li.c-nav__item.c-nav__item--active
-                a.c-nav__link(href='/produkte.html')
-                  span Produkte
-              li.c-nav__item
-                a.c-nav__link(href='/partner.html')
-                  span Partner
-              li.c-nav__item
-                a.c-nav__link(href='/kontakt.html')
-                  span Kontakt
-              li.c-nav__item
-                a.c-nav__link(href='/impressum.html')
-                  span Impressum
+            a.c-nav-burger(href="#nav") Burger
 
-            //- Model
+          .l-head__nav
+            //- Nav
+            nav#nav.c-nav
+              ul.c-nav__list
+                li.c-nav__item
+                  a.c-nav__link(href='/willkommen.html')
+                    span Willkommen
+                li.c-nav__item
+                  a.c-nav__link(href='/uns.html')
+                    span Über uns
+                li.c-nav__item
+                  a.c-nav__link(href='/oeffnungszeiten.html')
+                    span Öffnungszeiten
+                li.c-nav__item.c-nav__item--active
+                  a.c-nav__link(href='/produkte.html')
+                    span Produkte
+                li.c-nav__item
+                  a.c-nav__link(href='/partner.html')
+                    span Partner
+                li.c-nav__item
+                  a.c-nav__link(href='/kontakt.html')
+                    span Kontakt
+                li.c-nav__item
+                  a.c-nav__link(href='/impressum.html')
+                    span Impressum
+
+          //- Model
+          .l-head__model
             .c-model
-              //- Model ...
+              img.c-model__img(src="/images/layout/model-01.jpg", alt="Model")
 
       //- Content column
-      main.l-layout__content
-        .l-layout__content-inner
+      main.l-content
+        .l-content__inner
           block content
 
     //- scripts etc.

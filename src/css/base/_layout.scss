@@ -2,18 +2,19 @@
 // Layout
 // --------------------------------------------------
 
-.l-layout {
+.l-wrapper {
   display: flex;
   flex-direction: column;
 
-  @include mappy-bp(md) {
+  @include mappy-bp($bp-layout-horizontal) {
+    flex-grow: 1;
     flex-direction: row;
   }
 }
 
 // Shared (Head + Content)
-.l-layout__content,
-.l-layout__head {
+.l-content,
+.l-head {
   padding-left: $container-gutter;
   padding-right: $container-gutter;
 
@@ -23,36 +24,74 @@
   }
 }
 
-.l-layout__content-inner,
-.l-layout__head-inner {
+.l-content__inner,
+.l-head__inner {
   max-width: rem($container-width-default);
 }
 
 // Head
-.l-layout__head {
-  @include mappy-bp(md) {
+.l-head {
+  padding-top: rem(10px);
+  padding-bottom: rem(10px);
+
+  @include mappy-bp($bp-layout-horizontal) {
     width: 50%;
+    padding-top: rem($head-spacing-vertical-sm);
+    padding-bottom: 0;
   }
 }
 
-.l-layout__head-inner {
-  @include mappy-bp(md) {
+.l-head__inner {
+  @include mappy-bp($bp-layout-horizontal) {
     margin-left: auto;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.l-head__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .c-nav-burger {
+    margin-left: rem(25px);
+  }
+}
+
+.l-head__nav {
+  padding-top: rem(20px);
+  padding-bottom: rem(20px);
+
+  @include mappy-bp($bp-layout-horizontal) {
+    padding-left: rem(173px); // totally magic number, based on logo signet width
+  }
+}
+
+.l-head__model {
+  display: none;
+
+  @include mappy-bp($bp-layout-horizontal h 960px) {
+    display: block;
+    margin-top: auto;
+    padding-top: rem(50px);
   }
 }
 
 // Content
-.l-layout__content {
+.l-content {
   background-color: $color-gray-2;
   color: white;
   @include font-smoothing;
 
-  @include mappy-bp(md) {
+  @include mappy-bp($bp-layout-horizontal) {
     width: 50%;
   }
 }
 
-.l-layout__content-inner {
+.l-content__inner {
   padding-top: rem($content-spacing-vertical);
   padding-bottom: rem($content-spacing-vertical);
 

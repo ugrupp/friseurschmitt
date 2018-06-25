@@ -2,6 +2,14 @@
 // Navigation
 // --------------------------------------------------
 
+.c-nav-burger {
+  display: block;
+
+  @include mappy-bp($bp-layout-horizontal) {
+    display: none;
+  }
+}
+
 .c-nav__item {
   font-weight: $font-weight-black;
   @include font-smoothing;
