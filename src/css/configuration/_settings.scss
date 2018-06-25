@@ -20,5 +20,10 @@ $transition-time-long: .8s;
 $z-index: column-main, column-header;
 
 // Sizes
-$container-gutter: 20px;
-$container-width-default: 830px;
+$container-gutter: 25px;
+$container-gutter-sm: 50px;
+$container-width-default: 460px;
+
+$content-spacing-vertical: 50px;
+$content-spacing-vertical-sm: 100px;
+

@@ -1,3 +1,63 @@
 //
 // Layout
 // --------------------------------------------------
+
+.l-layout {
+  display: flex;
+  flex-direction: column;
+
+  @include mappy-bp(md) {
+    flex-direction: row;
+  }
+}
+
+// Shared (Head + Content)
+.l-layout__content,
+.l-layout__head {
+  padding-left: $container-gutter;
+  padding-right: $container-gutter;
+
+  @include mappy-bp(sm) {
+    padding-left: $container-gutter-sm;
+    padding-right: $container-gutter-sm;
+  }
+}
+
+.l-layout__content-inner,
+.l-layout__head-inner {
+  max-width: rem($container-width-default);
+}
+
+// Head
+.l-layout__head {
+  @include mappy-bp(md) {
+    width: 50%;
+  }
+}
+
+.l-layout__head-inner {
+  @include mappy-bp(md) {
+    margin-left: auto;
+  }
+}
+
+// Content
+.l-layout__content {
+  background-color: $color-gray-2;
+  color: white;
+  @include font-smoothing;
+
+  @include mappy-bp(md) {
+    width: 50%;
+  }
+}
+
+.l-layout__content-inner {
+  padding-top: rem($content-spacing-vertical);
+  padding-bottom: rem($content-spacing-vertical);
+
+  @include mappy-bp(md) {
+    padding-top: rem($content-spacing-vertical-sm);
+    padding-bottom: rem($content-spacing-vertical-sm);
+  }
+}
