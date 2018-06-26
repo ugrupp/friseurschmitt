@@ -1,0 +1,54 @@
+//
+// Slides (image gallery)
+// --------------------------------------------------
+
+.c-slides {
+
+}
+
+.c-slides__slide {
+  width: 100%;
+  height: auto;
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+.c-slides__thumbs {
+  margin-top: rem($content-spacing-inner);
+  display: flex;
+}
+
+.c-slides__thumb {
+  flex-basis: 0;
+  flex-grow: 1;
+  width: 0;
+
+  margin-left: rem(15px);
+
+  border: rem(3px) solid $color-gold;
+  transition: all $transition-time;
+
+  &:hover,
+  &:focus,
+  &.is-active {
+    border-color: $color-white;
+  }
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.c-slides__headline {
+  margin-top: rem($content-spacing);
+  @include font-black;
+  @include font-smoothing;
+}

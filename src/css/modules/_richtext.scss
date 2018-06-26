@@ -13,7 +13,7 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: rem($content-spacing-inner);
+      margin-bottom: rem($content-spacing);
     }
   }
 
@@ -57,7 +57,8 @@
 
   h2,
   h3 {
-    font-weight: $font-weight-bold;
+    @include font-black;
+    @include font-smoothing;
   }
 
   em {

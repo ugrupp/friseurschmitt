@@ -13,5 +13,7 @@ import 'babel-polyfill';
 // module imports
 import './modules/fontfaceobserver';
 import Nav from './modules/nav';
+import Slides from './modules/slides';
 
 new Nav();
+new Slides();
