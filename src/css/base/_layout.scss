@@ -62,17 +62,34 @@
 }
 
 .l-head__nav {
-  padding-top: rem(20px);
-  padding-bottom: rem(20px);
-  display: none;
+  height: 0;
+  overflow: hidden;
+
+  transition-property: all;
+  transition-duration: $transition-time-medium;
+  transform:  scaleY(.6);
+  opacity: 0;
+  transform-origin: top center;
 
   &.is-open {
-    display: block;
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    transform: scaleY(1);
   }
 
   @include mappy-bp($bp-layout-horizontal) {
-    display: block;
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    transform: scaleY(1);
+
     padding-left: rem(173px); // totally magic number, based on logo signet width
+  }
+
+  .c-nav {
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
   }
 }
 
