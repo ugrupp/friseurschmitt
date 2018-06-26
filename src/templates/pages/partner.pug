@@ -3,3 +3,51 @@ extends ../layouts/layout.pug
 block variables
   - var model = '06';
   - var handle = 'partner';
+
+block content
+  h1.c-headline.c-headline--h1.c-content__h1 Partner
+
+  //- Richtext content
+  .c-richtext
+    h2 So sieht unser Netzwerk aus
+
+  //- Partners
+  -
+    var partners = [
+      {
+        name: 'hanfweihnacht GbR',
+        img: 'partner_logos-01.jpg',
+        href: 'http://www.hanfweihnacht.de',
+      },
+      {
+        name: 'snapschott',
+        img: 'partner_logos-02.jpg',
+        href: 'http://www.snapschott.de',
+      },
+      {
+        name: 'mountain rider',
+        img: 'partner_logos-03.jpg',
+        href: 'http://www.mountain-rider.com',
+      },
+      {
+        name: 'Sören Salon',
+        img: 'partner_logos-04.jpg',
+        href: 'http://www.soerensalon.com',
+      },
+      {
+        name: 'Welt in Bildern',
+        img: 'partner_logos-05.jpg',
+        href: 'http://www.weltinbildern.de',
+      },
+      {
+        name: 'Caruso Bistorante &amp; Bar',
+        img: 'partner_logos-06.jpg',
+        href: 'http://www.bistrorante-caruso.de',
+      },
+    ]
+
+  ul.c-content__partners.c-partners
+    each partner in partners
+      li.c-partners__partner
+        a(href=partner.href target="_blank")
+          img(src=`images/layout/${partner.img}` alt=partner.name)
