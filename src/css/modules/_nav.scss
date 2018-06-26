@@ -3,10 +3,52 @@
 // --------------------------------------------------
 
 .c-nav-burger {
+  flex-shrink: 0;
   display: block;
+  position: relative;
+  height: rem(40px);
+  width: rem(40px);
 
   @include mappy-bp($bp-layout-horizontal) {
     display: none;
+  }
+
+  &,
+  &:hover,
+  &:focus {
+    color: $color-gray-2;
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    transition: all $transition-time;
+    transform: translate3d(0, 0, 0);
+
+    // burger
+    &:first-of-type {
+      .is-nav-open & {
+        transform: scale(.75);
+        opacity: 0;
+      }
+    }
+
+    // close
+    &:last-of-type {
+      transform: scale(.75);
+      opacity: 0;
+
+      .is-nav-open & {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
   }
 }
 

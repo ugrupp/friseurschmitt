@@ -36,10 +36,14 @@ html
                 +svg('logo-friseurschmitt-desktop')
               .u-invisible Friseursalon Schmitt
 
-            a.c-nav-burger(href="#nav") Burger
+            //- Nav toggler
+            a.c-nav-burger(href="#nav" data-nav-toggler)
+              +svg('menu')
+              +svg('close')
+              span.u-invisible Menü öffnen/schließen
 
-          .l-head__nav
-            //- Nav
+          //- Nav
+          .l-head__nav(data-nav-container)
             nav#nav.c-nav
               ul.c-nav__list
                 li.c-nav__item(class=(handle === 'willkommen' ? 'c-nav__item--active' : ''))

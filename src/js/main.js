@@ -12,3 +12,6 @@ import 'babel-polyfill';
 
 // module imports
 import './modules/fontfaceobserver';
+import Nav from './modules/nav';
+
+new Nav();

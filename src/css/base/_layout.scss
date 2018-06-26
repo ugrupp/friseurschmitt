@@ -66,6 +66,10 @@
   padding-bottom: rem(20px);
   display: none;
 
+  &.is-open {
+    display: block;
+  }
+
   @include mappy-bp($bp-layout-horizontal) {
     display: block;
     padding-left: rem(173px); // totally magic number, based on logo signet width
