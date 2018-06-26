@@ -15,8 +15,10 @@
 @mixin font-black {
   font-weight: $font-weight-black;
   font-family: $font-family-ci-black-fallback;
+  letter-spacing: -2px;
 
   .has-loaded-fonts-ci & {
     font-family: $font-family-ci;
+    letter-spacing: normal;
   }
 }

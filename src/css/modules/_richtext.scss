@@ -25,8 +25,17 @@
     margin-bottom: 0;
   }
 
+  hr {
+    height: rem(1px);
+    background-color: $color-white;
+    border: 0 none;
+    margin-top: rem($content-spacing-inner);
+    margin-bottom: rem($content-spacing-inner);
+  }
+
   p,
-  table {
+  table,
+  address {
     &:not(:last-child) {
       margin-bottom: rem($content-spacing-inner);
     }
@@ -37,12 +46,12 @@
   }
 
   a {
-    color: $color-gold;
+    color: $color-gold-light;
     transition: color $transition-time;
 
     &:hover,
     &:focus {
-      color: $color-gold-light;
+      text-decoration: underline;
     }
   }
 

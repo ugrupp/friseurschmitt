@@ -27,10 +27,12 @@ body {
 
   // fallback font for initial render to avoid FOIT
   font-family: $font-family-ci-fallback;
+  letter-spacing: -.5px;
 
   // fonts-loaded flag, triggered by JS (fontfaceobserver)
   &.has-loaded-fonts-ci {
     font-family: $font-family-ci;
+    letter-spacing: normal;
   }
 
   // holy grail
