@@ -42,27 +42,30 @@ html
             //- Nav
             nav#nav.c-nav
               ul.c-nav__list
-                li.c-nav__item
+                li.c-nav__item(class=(handle === 'willkommen' ? 'c-nav__item--active' : ''))
                   a.c-nav__link(href='/willkommen.html')
                     span Willkommen
-                li.c-nav__item
+                li.c-nav__item(class=(handle === 'uns' ? 'c-nav__item--active' : ''))
                   a.c-nav__link(href='/uns.html')
                     span Über uns
-                li.c-nav__item
+                li.c-nav__item(class=(handle === 'oeffnungszeiten' ? 'c-nav__item--active' : ''))
                   a.c-nav__link(href='/oeffnungszeiten.html')
                     span Öffnungszeiten
-                li.c-nav__item.c-nav__item--active
+                li.c-nav__item(class=(handle === 'produkte' ? 'c-nav__item--active' : ''))
                   a.c-nav__link(href='/produkte.html')
                     span Produkte
-                li.c-nav__item
+                li.c-nav__item(class=(handle === 'partner' ? 'c-nav__item--active' : ''))
                   a.c-nav__link(href='/partner.html')
                     span Partner
-                li.c-nav__item
+                li.c-nav__item(class=(handle === 'kontakt' ? 'c-nav__item--active' : ''))
                   a.c-nav__link(href='/kontakt.html')
                     span Kontakt
-                li.c-nav__item
+                li.c-nav__item(class=(handle === 'impressum' ? 'c-nav__item--active' : ''))
                   a.c-nav__link(href='/impressum.html')
                     span Impressum
+                li.c-nav__item(class=(handle === 'datenschutz' ? 'c-nav__item--active' : ''))
+                  a.c-nav__link(href='/datenschutz.html')
+                    span Datenschutz
 
           //- Model
           .l-head__model
