@@ -20,7 +20,7 @@ export default class Slides {
       }
 
       // something went wrong
-      console.error('Error: Slides could not be initialized.'); // eslint-disable-line no-console
+      console.warn('Warning: Slides could not be initialized.'); // eslint-disable-line no-console
       return false;
     });
   }
