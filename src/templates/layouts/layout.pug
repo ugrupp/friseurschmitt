@@ -66,8 +66,9 @@ html
 
           //- Model
           .l-head__model
+            - var modelImgSrc = `/images/layout/model-${model || '01'}.jpg`
             .c-model
-              img.c-model__img(src="/images/layout/model-01.jpg", alt="Model")
+              img.c-model__img(src=modelImgSrc, alt="Model")
 
       //- Content column
       if !hideContent
