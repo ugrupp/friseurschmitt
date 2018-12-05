@@ -158,7 +158,7 @@ gulp.task('pug-build', function buildHTML() {
     errorHandler: plumberErrorHandler
   }))
   .pipe(pug({
-    pretty: true,
+    pretty: process.env.NODE_ENV === 'development',
   }))
   .pipe(gulp.dest(config.dest))
 });
