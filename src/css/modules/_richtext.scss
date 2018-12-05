@@ -35,7 +35,8 @@
 
   p,
   table,
-  address {
+  address,
+  ul {
     &:not(:last-child) {
       margin-bottom: rem($content-spacing-inner);
     }
@@ -63,5 +64,11 @@
 
   em {
     font-style: italic;
+  }
+
+  ul {
+    list-style: disc;
+    list-style-position: outside;
+    padding-left: 1.1em;
   }
 }
